@@ -1,0 +1,113 @@
+@import './variables';
+
+// миксины
+@import './_mixins.scss';
+
+// обнуление стилей
+@import './reset.scss';
+
+// контейнер
+@import './container.scss';
+
+// оболочка
+@import './wrapper.scss';
+
+// контент
+@import './content.scss';
+
+// шрифты
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+// глобальные стили
+@import './global.scss';
+
+.chat {
+   position: fixed;
+   bottom: 100px;
+   right: 10px;
+   max-width: 300px;
+   width: 100%;
+
+   @include breakpoint(768px) {
+      max-width: 100%;
+   }
+
+   // .chat__wrapper
+
+   &__wrapper {
+      background: #F7F7F7;
+      height: 0;
+      opacity: 0;
+      padding: 0px 0px;
+      overflow: hidden;
+      transition: opacity 0.3s;
+      margin-bottom: 20px;
+
+      &--active {
+         height: auto;
+         opacity: 1;
+         padding: 30px 0px;
+      }
+   }
+
+   // .chat__form
+
+   &__form {
+      background: #fff;
+      padding: 20px 30px;
+      border-top: 1px solid gray;
+      border-bottom: 1px solid gray;
+
+
+
+      .row {
+         margin-bottom: 20px;
+      }
+
+      h2 {
+         font-size: 22px;
+         line-height: 36px;
+         text-align: center;
+         margin-bottom: 30px;
+      }
+   }
+
+  
+
+
+
+   // .form__input
+
+   &__input {}
+
+    // .chat__button-wrapper
+
+   &__button-wrapper{
+      display: flex;
+      justify-content: center;
+
+      @include breakpoint(768px){
+         justify-content: end;
+      }
+   }
+
+   // .chat__toggle
+
+   &__toggle {
+      font-size: 36px;
+      width: 60px;
+      height: 60px;
+      background: #fff;
+      border-radius: 100%;
+      cursor: pointer;
+
+  
+   }
+}
+
+.form {}
+
+.form-control {}
+
+
+.btn-primary {}

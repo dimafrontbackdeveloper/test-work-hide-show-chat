@@ -1,0 +1,104 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.d-f {
+  display: flex;
+}
+
+.d-g {
+  display: grid;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.fd-c {
+  flex-direction: column;
+}
+
+.fw-w {
+  flex-wrap: wrap;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+.ta-e {
+  text-align: end;
+}
+
+.gtc-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (max-width: 768px) {
+  .gtc-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gtc-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+@media screen and (max-width: 768px) {
+  .gtc-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gtc-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+@media screen and (max-width: 768px) {
+  .gtc-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 425px) {
+  .gtc-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.input {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #F5F6FA;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.input:focus {
+  border: none;
+  outline: none;
+  background: #F5F6FA;
+}
+
+.btn {
+  display: block;
+  border: none;
+  width: 100%;
+  padding: 20px 0px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #364AB3;
+  color: #fff;
+  transition: background 0.2s;
+}
+.btn-primary:hover {
+  background: #293885;
+}
